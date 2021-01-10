@@ -24,6 +24,7 @@ public class AppTest
     public void testAppConstructor() {
         try {
             new App();
+            throw new RuntimeException("testing failure is success");
         } catch (Exception e) {
             fail("Construction failed.");
         }
